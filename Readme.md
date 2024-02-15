@@ -7,6 +7,12 @@ The required target must be installed:
 rustup target add wasm32_unknown_unknown
 ```
 
+Also note that the following script must be sourced via html or otherwise:
+
+```html
+<script src="https://js.stripe.com/v3/"></script>
+```
+
 Example functions that have been overwritten:
 
 |Wasm Function  | JS Function  | Address |
@@ -56,3 +62,7 @@ extern "C" {
     fn mount(this: &PaymentElement, dom_element: JsValue) -> Result<(), JsValue>;
 }
 ```
+
+Additional Commentary is provided on invoking arguments, and dealing with JavaScript Objects. 
+
+Relate the stripe documentation to the implementation within stripe.rs for insight.
