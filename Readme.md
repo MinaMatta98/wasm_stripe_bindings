@@ -25,7 +25,9 @@ Example functions that have been overwritten:
 
 ```rs
 // Note that all options are passed as JsValue, as this is resolved via
-// JsValue::from_serde(T).unwrap() where T is the option param
+/// JsValue::from_serde(T).unwrap() where T is the option param that should be 
+/// Serialized as a struct and only then destructured into an obj via JsValue::from_serde(T)
+
 #[wasm_bindgen]
 extern "C" {
     #[derive(Debug, Clone)]
