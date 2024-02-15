@@ -21,7 +21,7 @@ Example functions that have been overwritten:
 |`create_payment_method()`|`CreatePaymentMethod()`| https://docs.stripe.com/js/payment_methods/create_payment_method|
 |`create()`|`elements.create()`|https://docs.stripe.com/js/elements_object/create_payment_element|
 |`submit()`|`elements.submit()`|https://docs.stripe.com/js/elements/submit|
-|`mount()`|`elements.submit()`|https://docs.stripe.com/js/element/mount|
+|`mount()`|`element.mount()`|https://docs.stripe.com/js/element/mount|
 
 ```rs
 // Note that all options are passed as JsValue, as this is resolved via
