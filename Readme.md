@@ -65,4 +65,4 @@ extern "C" {
 
 Additional Commentary is provided on invoking arguments, and dealing with JavaScript Objects. 
 
-Relate the stripe documentation to the implementation within stripe.rs for insight.
+Relate the stripe documentation to the implementation within [stripe.rs]( https://github.com/MinaMatta98/wasm_stripe_bindings/blob/master/src/stripe.rs ) for insight.
